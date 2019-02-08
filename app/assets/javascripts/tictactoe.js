@@ -120,7 +120,7 @@ function checkWinner() {
 }
 
   function findGame(id) {
-    $("#message").text(`/games/${id}`);
+    $("#message").text(`/games/${id}`)<br>;
     $.get(`/games/${id}`, function(game) {
       $('#games').empty();
       gameId = game.data.id;
